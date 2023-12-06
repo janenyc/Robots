@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
-const { getAllRobots,
-    getRobotById } = require('../db/robots');
+const { createRobot, getAllRobots,
+    getRobotById } = require('../db/robots.cjs');
 
 // GET - /api/robots - get all robots
 router.get('/', async (req, res, next) => {

@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
-const { getAllTasks,
-    getTaskById } = require('../db/tasks');
+const { createTask, getAllTasks,
+    getTaskById } = require('../db/tasks.cjs');
 
 // GET - /api/tasks - get all tasks
 router.get('/', async (req, res, next) => {
